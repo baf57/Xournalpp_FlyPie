@@ -3,7 +3,7 @@ function initUi()
     thicknesses = {"Very Fine", "Fine", "Medium", "Thick", "Very Thick"}
     pen_types = {"Standard", "Dashed", "Dashed-Dotted", "Dotted"}
     eraser_types = {"Standard", "Whiteout", "Delete Stroke"}
-    keys = "qwertyuiopasdfghjklzxcvbnm"
+    keys = "qwertyuiopasdfghjklzxcvbnm!@#$%^&*()"
     i = 1
 
     for c,h in pairs(colors) do
