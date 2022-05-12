@@ -1,64 +1,53 @@
 function initUi()
-    colors = {["Black"] = 0x000000, ["Green"] = 0x008000, ["Light Blue"] = 0x00c0ff, ["Light Green"] = 0x00ff00, ["Blue"] = 0x3333cc, ["Gray"] = 0x808080, ["Red"] = 0xff0000, ["Magenta"] = 0xff00ff, ["Orange"] = 0xff8000, ["Yellow"] = 0xffff00, ["White"] = 0xffffff}
-    thicknesses = {"Very Fine", "Fine", "Medium", "Thick", "Very Thick"}
-    pen_types = {"Standard", "Dashed", "Dashed-Dotted", "Dotted"}
-    eraser_types = {"Standard", "Whiteout", "Delete Stroke"}
-    keys = "qwertyuiopasdfghjklzxcvbnm!@#$%^&*()"
-    i = 1
+    local colors = {"Black", "Green", "Light Blue", "Light Green", "Blue", "Gray", "Red", "Magenta", "Orange", "Yellow", "White"}
+    local thicknesses = {"Very Fine", "Fine", "Medium", "Thick", "Very Thick"}
+    local pen_types = {"Standard", "Dashed", "Dashed-Dotted", "Dotted"}
+    local eraser_types = {"Standard", "Whiteout", "Delete Stroke"}
 
-    for c,h in pairs(colors) do
-        str = "Change Color to " .. c
-        global pass = h
-        app.registerUi({["menu"] = str, ["callback"] = changeColor(), ["accelerator"] = "<Control><Alt><Shift>" .. keys:sub(i,i)})
-        i = i + 1
-    end
-    for n,t in ipairs(thicknesses) do
-        str = "Change Pen Thickness to " .. t
-        global pass = n
-        app.registerUi({["menu"] = str, ["callback"] = "changePenThickness", ["accelerator"] = "<Control><Alt><Shift>" .. keys:sub(i,i)})
-        i = i + 1
-    end
-    for n,t in ipairs(thicknesses) do
-        str = "Change Eraser Thickness to " .. t
-        global pass = n
-        app.registerUi({["menu"] = str, ["callback"] = "changeEraserThickness", ["accelerator"] = "<Control><Alt><Shift>" .. keys:sub(i,i)})
-        i = i + 1
-    end
-    for n,ty in ipairs(pen_types) do
-        str = "Change Pen Type to " .. ty
-        global pass = n
-        app.registerUi({["menu"] = str, ["callback"] = "changePenType", ["accelerator"] = "<Control><Alt><Shift>" .. keys:sub(i,i)})
-        i = i + 1
-    end
-    for n,ty in ipairs(eraser_types) do
-        str = "Change Eraser Type to " .. ty
-        global pass = n
-        app.registerUi({["menu"] = str, ["callback"] = "changeEraserType", ["accelerator"] = "<Control><Alt><Shift>" .. keys:sub(i,i)})
-        i = i + 1
+    local arrays = {colors, thicknesses, thicknesses, pen_types, eraser_types}
+    local callbacks = {"changeColor", "changePenThickness", "changeEraserThickness", "changePenType", "changeEraserType"}
+    local strings = {"Change Pen Color to ", "Change Pen Thickness to ", "Change Eraser Thickness to ", "Change Pen Type to ", "Change Eraser Type to "}
+
+    local keys = "qwertyuiopasdfghjklzxcvbnm"
+    local mods = {"<Control><Alt><Shift>", "<Alt><Shift>", "<Control><Alt>"}
+    local i = 1
+    local j = 1
+
+    for cind,cb in ipairs(callbacks) do
+        for aind,option in ipairs(arrays[cind]) do
+            Pass = aind
+            app.registerUi({["menu"] = strings[cind] .. option, ["callback"] = cb, ["accelerator"] = mods[j] .. keys:sub(i,i)})
+            i = i + 1
+            if i > #keys then
+                i = 1
+                j = j + 1
+            end
+        end
     end
 end
 
--- Callback if the menu item is executed
-function changeColor()
-    app.changeToolColor({["color"] = pass, ["selection"] = true})
+-- Callbacks
+local function changeColor()
+    local a = {0x000000, 0x008000, 0x00c0ff, 0x00ff00, 0x3333cc, 0x808080, 0xff0000, 0xff00ff, 0xff8000, 0xffff00, 0xffffff}
+    app.changeToolColor({["color"] = a[Pass], ["selection"] = true})
 end
 
-function changePenThickness()
-    a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
-    app.uiAction({["action"]="ACTION_TOOL_PEN_SIZE_" .. a[pass]})
+local function changePenThickness()
+    local a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
+    app.uiAction({["action"]="ACTION_TOOL_PEN_SIZE_" .. a[Pass]})
 end
 
-function changeEraserThickness()
-    a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
-    app.uiAction({["action"]="ACTION_TOOL_ERASER_SIZE_" .. a[pass]})
+local function changeEraserThickness()
+    local a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
+    app.uiAction({["action"]="ACTION_TOOL_ERASER_SIZE_" .. a[Pass]})
 end
 
-function changePenType()
-    a = {"PLAIN","DASH","DASH_DOT","DOT"}
-    app.uiAction({["action"]="ACTION_TOOL_LINE_STYLE_" .. a[pass]})
+local function changePenType()
+    local a = {"PLAIN","DASH","DASH_DOT","DOT"}
+    app.uiAction({["action"]="ACTION_TOOL_LINE_STYLE_" .. a[Pass]})
 end
 
-function changeEraserType()
-    a = {"STANDARD","DELETE_STROKE","WHITEOUT"}
-    app.uiAction({["action"]="ACTION_TOOL_ERASER_" .. a[pass]})
+local function changeEraserType()
+    local a = {"STANDARD","DELETE_STROKE","WHITEOUT"}
+    app.uiAction({["action"]="ACTION_TOOL_ERASER_" .. a[Pass]})
 end
