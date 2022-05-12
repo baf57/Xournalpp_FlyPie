@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="22"
+   width="22"
+   version="1.1"
+   id="svg963"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs967" />
+  <path
+     style="fill:#fafafa;fill-opacity:1;stroke:#fafafa;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 4.9823352e-7,2.6772921 H 22 v 2.399999 H 4.9823352e-7 Z"
+     id="path961" />
+  <g
+     style="fill:#fafafa;fill-opacity:1"
+     id="g896"
+     transform="matrix(1,0,0,0.90840238,0.1000005,3.7075738)">
+    <path
+       style="fill:#fafafa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -0.1,9.679 h 2.4617324 v 2.642 H -0.1 Z m 3.9106264,0 h 2.4617324 v 2.642 H 3.8106264 Z m 3.9066623,0 h 2.4617323 v 2.642 H 7.7172887 Z m 3.9106263,0 h 2.461733 v 2.642 h -2.461733 z m 3.899725,0 h 2.461733 v 2.642 H 15.52764 Z m 3.910627,0 h 2.461732 v 2.642 h -2.461732 z"
+       id="path894" />
+  </g>
+  <g
+     style="fill:#fafafa;fill-opacity:1"
+     id="g829"
+     transform="matrix(1.0042452,0,0,0.90840238,-0.04719902,8.2075738)">
+    <path
+       style="fill:#fafafa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 4.702,1040.041 h 6.385 v 2.642 H 4.702 Z m -3.873,0 h 2.484 v 2.642 H 0.829 Z m 15.522,0 h 6.385 v 2.642 h -6.385 z m -3.874,0 h 2.484 v 2.642 h -2.484 z"
+       transform="translate(-0.782,-1030.362)"
+       id="path827" />
+  </g>
+  <g
+     style="fill:#fafafa;fill-opacity:1"
+     id="g4"
+     transform="matrix(1.1850255,0,0,0.90840238,-2.0346882,-1.2924262)">
+    <path
+       style="fill:#fafafa;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.701,1040.041 h 8.305 v 2.642 H 1.701 Z m 10.26,0 h 8.305 v 2.642 h -8.305 z"
+       transform="translate(0.016,-1030.362)"
+       id="path2" />
+  </g>
+</svg>
