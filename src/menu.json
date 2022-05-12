@@ -1,0 +1,581 @@
+[
+  {
+    "name": "Example Menu",
+    "icon": "flypie-symbolic-#46a",
+    "shortcut": "<Primary>space",
+    "centered": false,
+    "id": 0,
+    "children": [
+      {
+        "name": "Sound",
+        "icon": "flypie-multimedia-symbolic-#c86",
+        "children": [
+          {
+            "name": "Mute",
+            "icon": "flypie-multimedia-mute-symbolic-#853",
+            "type": "Shortcut",
+            "data": "AudioMute",
+            "angle": -1
+          },
+          {
+            "name": "Play / Pause",
+            "icon": "flypie-multimedia-playpause-symbolic-#853",
+            "type": "Shortcut",
+            "data": "AudioPlay",
+            "angle": -1
+          },
+          {
+            "name": "Next Title",
+            "icon": "flypie-multimedia-next-symbolic-#853",
+            "type": "Shortcut",
+            "data": "AudioNext",
+            "angle": 90
+          },
+          {
+            "name": "Previous Title",
+            "icon": "flypie-multimedia-previous-symbolic-#853",
+            "type": "Shortcut",
+            "data": "AudioPrev",
+            "angle": 270
+          }
+        ],
+        "type": "CustomMenu",
+        "data": {},
+        "angle": -1
+      },
+      {
+        "name": "Favorites",
+        "icon": "flypie-menu-favorites-symbolic-#da3",
+        "type": "Favorites",
+        "data": {},
+        "angle": -1
+      },
+      {
+        "name": "Next Workspace",
+        "icon": "flypie-go-right-symbolic-#6b5",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Control><Alt>Right"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Maximize Window",
+        "icon": "flypie-window-maximize-symbolic-#b68",
+        "type": "Shortcut",
+        "data": "<Alt>F10",
+        "angle": -1
+      },
+      {
+        "name": "Fly-Pie Settings",
+        "icon": "flypie-menu-system-symbolic-#3ab",
+        "type": "Command",
+        "data": "gnome-extensions prefs flypie@schneegans.github.com",
+        "angle": -1
+      },
+      {
+        "name": "Close Window",
+        "icon": "flypie-window-close-symbolic-#a33",
+        "type": "Shortcut",
+        "data": "<Alt>F4",
+        "angle": -1
+      },
+      {
+        "name": "Previous Workspace",
+        "icon": "flypie-go-left-symbolic-#6b5",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Control><Alt>Left"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Running Apps",
+        "icon": "flypie-menu-running-apps-symbolic-#65a",
+        "type": "RunningApps",
+        "data": {
+          "activeWorkspaceOnly": false,
+          "appGrouping": true,
+          "hoverPeeking": true,
+          "nameRegex": ""
+        },
+        "angle": -1
+      }
+    ],
+    "type": "CustomMenu",
+    "data": {},
+    "touchButton": false,
+    "superRMB": false
+  },
+  {
+    "name": "Xournal++",
+    "icon": "com.github.xournalpp.xournalpp",
+    "type": "CustomMenu",
+    "children": [
+      {
+        "name": "Pen",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>p"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Hand Tool",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-hand.svg",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>a"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Pen Edit",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/tool-pencil-edit.svg",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Change Color",
+            "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/colors.svg",
+            "type": "CustomMenu",
+            "children": [
+              {
+                "name": "Black",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/black.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>q"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Green",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/green.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>w"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Light Blue",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/lightblue.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>e"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Light Green",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/lightgreen.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>r"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Blue",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/blue.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>t"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Gray",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/gray.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>y"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Red",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/red.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>u"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Magenta",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/magenta.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>i"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Orange",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/orange.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>o"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Yellow",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/yellow.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>p"
+                },
+                "angle": -1
+              },
+              {
+                "name": "White",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/white.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>a"
+                },
+                "angle": -1
+              }
+            ],
+            "angle": -1,
+            "data": {}
+          },
+          {
+            "name": "Change Thickness",
+            "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/thicknesses.svg",
+            "type": "CustomMenu",
+            "children": [
+              {
+                "name": "Fine",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/fine.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>d"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Medium",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/medium.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>f"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Thick",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/thick.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>g"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Very Thick",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/verythick.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>h"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Very Fine",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/veryfine.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>s"
+                },
+                "angle": -1
+              }
+            ],
+            "angle": -1,
+            "data": {}
+          },
+          {
+            "name": "Change Tool Type",
+            "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/pen_tools.svg",
+            "type": "CustomMenu",
+            "children": [
+              {
+                "name": "Standard",
+                "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-line-style-plain.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>c"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Dashed",
+                "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-line-style-dash.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>v"
+                },
+                "angle": -1
+              },
+              {
+                "name": "DashDotted",
+                "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-line-style-dash-dot.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>b"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Dotted",
+                "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-line-style-dot.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>n"
+                },
+                "angle": -1
+              }
+            ],
+            "angle": -1,
+            "data": {}
+          }
+        ],
+        "angle": -1,
+        "data": {}
+      },
+      {
+        "name": "Stroke Recognizer",
+        "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-shape-recognizer.svg",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Control>1"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Shapes",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/shapes_menu.svg",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Rectangle",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-draw-rect.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>2"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Ellipse",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-draw-ellipse.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>3"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Arrow",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-draw-arrow.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>4"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Line",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-draw-line.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>6"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Axis",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-draw-coordinate-system.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>5"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Spline",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-draw-spline.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Control>7"
+            },
+            "angle": -1
+          }
+        ],
+        "angle": -1,
+        "data": {}
+      },
+      {
+        "name": "Vertical Space",
+        "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-spacer.svg",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>v"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Page Edit",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/page-edit.svg",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Delete Page",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-page-delete.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": ""
+            },
+            "angle": -1
+          },
+          {
+            "name": "Add Page",
+            "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-page-add.svg",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": ""
+            },
+            "angle": -1
+          }
+        ],
+        "angle": -1,
+        "data": {}
+      },
+      {
+        "name": "Highlight",
+        "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-highlighter.svg",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>h"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Eraser Edit",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/tool-eraser-edit.svg",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Change Thickness",
+            "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/thicknesses.svg",
+            "type": "CustomMenu",
+            "children": [
+              {
+                "name": "Medium",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/medium.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>l"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Thick",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/thick.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>z"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Very Thick",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/verythick.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>x"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Very Fine",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/veryfine.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>j"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Fine",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/fine.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>k"
+                },
+                "angle": -1
+              }
+            ],
+            "angle": -1
+          },
+          {
+            "name": "Change Tool",
+            "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/eraser_tools.svg",
+            "type": "CustomMenu",
+            "children": [
+              {
+                "name": "Standard",
+                "icon": "/usr/share/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-eraser.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Control><Alt>m"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Delete Stroke",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/delete_stroke.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Alt>w"
+                },
+                "angle": -1
+              },
+              {
+                "name": "Whiteout",
+                "icon": "/home/brayden/Documents/git_cloned_dirs/Xournalpp_FlyPie/resources/whiteout.svg",
+                "type": "Shortcut",
+                "data": {
+                  "shortcut": "<Shift><Alt>q"
+                },
+                "angle": -1
+              }
+            ],
+            "angle": -1
+          }
+        ],
+        "angle": -1,
+        "data": {}
+      },
+      {
+        "name": "Eraser",
+        "icon": "/home/brayden/Documents/git_cloned_dirs/xournalpp/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-eraser.svg",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Shift><Control>e"
+        },
+        "angle": -1
+      }
+    ],
+    "id": 1,
+    "shortcut": "<Shift><Control><Super>plusminus",
+    "angle": -1,
+    "touchButton": false,
+    "superRMB": false,
+    "data": {},
+    "centered": false
+  }
+]
