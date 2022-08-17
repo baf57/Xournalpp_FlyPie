@@ -15,6 +15,13 @@ function initUi()
 
     for cind,cb in ipairs(callbacks) do
         for aind,option in ipairs(arrays[cind]) do
+            -- This is ugly... but it's easier than the alternative
+            if i == 4 && j == 1 then
+                acc = mods[3] .. "m"
+            else
+                acc = mods[j] .. key:sub(i,i)
+            end
+
             Pass = aind
             app.registerUi({["menu"] = strings[cind] .. option, ["callback"] = cb, ["accelerator"] = mods[j] .. keys:sub(i,i)})
             i = i + 1

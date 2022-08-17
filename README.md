@@ -16,8 +16,7 @@ $ cd Xournalpp_FlyPie
 
 Next, move the plugin files into the Xournal++ `plugins` directory. Note that this will likely require root permissions due to where the directory is currently located.
 ```
-# mkdir /usr/share/xournalpp/plugins/FlyPie
-# cp src/{plugin.ini,main.lua} /usr/share/xournalpp/plugins/FlyPie/
+# cp src/{plugin.ini,main.lua} ~/.config/xournalpp/plugins/FlyPie/
 ```
 After this, open the Fly-Pie settings and import the `./src/menu.json` file. This can differ depending on your GNOME version:
 * **< GNOME 40:** use [`gnome-tweaks`](https://github.com/GNOME/gnome-tweaks) and go to `extensions -> Fly-Pie -> Settings`
@@ -34,9 +33,5 @@ To get this working with a stylus button, you will likely have to do the followi
 Install [Input Remapper](https://github.com/sezanzeb/input-remapper) and bind `Shift + Ctrl + Super + plusminus` to one of the buttons.
 
 
-## Features
-I will add this in the future
-
 ## TODO
-* Features in README
 * Make a more concise installation method
