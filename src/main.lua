@@ -22,7 +22,7 @@ function initUi()
                 acc = mods[j] .. key:sub(i,i)
             end
 
-            app.registerUi({["menu"] = strings[cind] .. option, ["callback"] = cb, ["accelerator"] = mods[j] .. keys:sub(i,i)}, ["mode"] = aind)
+            app.registerUi({["menu"] = strings[cind] .. option, ["callback"] = cb, ["accelerator"] = mods[j] .. keys:sub(i,i), ["mode"] = aind})
             i = i + 1
             if i > #keys then
                 i = 1
