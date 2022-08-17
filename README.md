@@ -14,7 +14,7 @@ $ git clone https://github.com/baf57/Xournalpp_FlyPie.git
 $ cd Xournalpp_FlyPie
 ```
 
-Next, move the plugin files into the Xournal++ `plugins` directory. Note that this will likely require root permissions due to where the directory is currently located.
+Next, move the plugin files into the Xournal++ `plugins` directory.
 ```
 # cp src/{plugin.ini,main.lua} ~/.config/xournalpp/plugins/FlyPie/
 ```
