@@ -22,8 +22,7 @@ function initUi()
                 acc = mods[j] .. key:sub(i,i)
             end
 
-            Pass = aind
-            app.registerUi({["menu"] = strings[cind] .. option, ["callback"] = cb, ["accelerator"] = mods[j] .. keys:sub(i,i)})
+            app.registerUi({["menu"] = strings[cind] .. option, ["callback"] = cb, ["accelerator"] = mods[j] .. keys:sub(i,i)}, ["mode"] = aind)
             i = i + 1
             if i > #keys then
                 i = 1
@@ -34,27 +33,27 @@ function initUi()
 end
 
 -- Callbacks
-local function changeColor()
+function changeColor(mode)
     local a = {0x000000, 0x008000, 0x00c0ff, 0x00ff00, 0x3333cc, 0x808080, 0xff0000, 0xff00ff, 0xff8000, 0xffff00, 0xffffff}
-    app.changeToolColor({["color"] = a[Pass], ["selection"] = true})
+    app.changeToolColor({["color"] = a[mode], ["selection"] = true})
 end
 
-local function changePenThickness()
+function changePenThickness(mode)
     local a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
-    app.uiAction({["action"]="ACTION_TOOL_PEN_SIZE_" .. a[Pass]})
+    app.uiAction({["action"]="ACTION_TOOL_PEN_SIZE_" .. a[mode]})
 end
 
-local function changeEraserThickness()
+function changeEraserThickness(mode)
     local a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
-    app.uiAction({["action"]="ACTION_TOOL_ERASER_SIZE_" .. a[Pass]})
+    app.uiAction({["action"]="ACTION_TOOL_ERASER_SIZE_" .. a[mode]})
 end
 
-local function changePenType()
+function changePenType(mode)
     local a = {"PLAIN","DASH","DASH_DOT","DOT"}
-    app.uiAction({["action"]="ACTION_TOOL_LINE_STYLE_" .. a[Pass]})
+    app.uiAction({["action"]="ACTION_TOOL_LINE_STYLE_" .. a[mode]})
 end
 
-local function changeEraserType()
+function changeEraserType(mode)
     local a = {"STANDARD","DELETE_STROKE","WHITEOUT"}
-    app.uiAction({["action"]="ACTION_TOOL_ERASER_" .. a[Pass]})
+    app.uiAction({["action"]="ACTION_TOOL_ERASER_" .. a[mode]})
 end
