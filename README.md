@@ -16,7 +16,7 @@ $ cd Xournalpp_FlyPie
 
 Next, move the plugin files into the Xournal++ `plugins` directory.
 ```
-# cp src/{plugin.ini,main.lua} ~/.config/xournalpp/plugins/FlyPie/
+$ cp src/{plugin.ini,main.lua} ~/.config/xournalpp/plugins/FlyPie/
 ```
 After this, open the Fly-Pie settings and import the `./src/menu.json` file. This can differ depending on your GNOME version:
 * **< GNOME 40:** use [`gnome-tweaks`](https://github.com/GNOME/gnome-tweaks) and go to `extensions -> Fly-Pie -> Settings`
