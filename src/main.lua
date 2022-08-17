@@ -34,27 +34,27 @@ function initUi()
 end
 
 -- Callbacks
-local function changeColor()
+function changeColor()
     local a = {0x000000, 0x008000, 0x00c0ff, 0x00ff00, 0x3333cc, 0x808080, 0xff0000, 0xff00ff, 0xff8000, 0xffff00, 0xffffff}
     app.changeToolColor({["color"] = a[Pass], ["selection"] = true})
 end
 
-local function changePenThickness()
+function changePenThickness()
     local a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
     app.uiAction({["action"]="ACTION_TOOL_PEN_SIZE_" .. a[Pass]})
 end
 
-local function changeEraserThickness()
+function changeEraserThickness()
     local a = {"VERY_FINE","FINE","MEDIUM","THICK","VERY_THICK"}
     app.uiAction({["action"]="ACTION_TOOL_ERASER_SIZE_" .. a[Pass]})
 end
 
-local function changePenType()
+function changePenType()
     local a = {"PLAIN","DASH","DASH_DOT","DOT"}
     app.uiAction({["action"]="ACTION_TOOL_LINE_STYLE_" .. a[Pass]})
 end
 
-local function changeEraserType()
+function changeEraserType()
     local a = {"STANDARD","DELETE_STROKE","WHITEOUT"}
     app.uiAction({["action"]="ACTION_TOOL_ERASER_" .. a[Pass]})
 end
